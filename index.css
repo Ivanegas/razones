@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #69a5f9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 150px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: none;
+    /* Oculta todas las cartas al inicio */
+}
+
+.card h2 {
+    color: #ff6f61;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.card:first-child {
+    display: block;
+    /* Muestra solo la primera carta al inicio */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
